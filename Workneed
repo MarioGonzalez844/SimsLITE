@@ -1,0 +1,270 @@
+def activities_benraska():
+   career_choice = input('Jobs for benraska here. Only 3!')
+   print('So now you got your house and your city set up. Now we get to the fun stuff.  You can do all sorts of '
+         'things such as go to the park, go to the gym, the pool, and even the mall. You must remember though, '
+         'they all cost money!')
+   act_input=input('So what do you want to do?:'
+                   '1. Go to the Gym, $100'
+                   '2. Go to the Park, Free'
+                   '3. Go to the Mall and get clothes, $200'
+                   '4. Go to the Pool, $20'
+                   '5. Stay home and watch Netflix, $20'
+                   '6. Play Video Games on your Xbox, $60'
+                   '7. Go to work?....'
+                   '8. Learn how to cook'
+                   '9. Go to restaurant,$150!'
+                   'Pick from 1 to :')
+   if act_input=='1':
+       print(' You go to the gym and you work out for 4 hours.  You feel yourself getting stronger!')
+       activities_benraska()
+   elif act_input =='2':
+       print(' You go to the park and you are inspired by nature.'
+             'You write a poem that goes:'
+             'Roses are red\n'
+             ', Violets are blue\n'
+             ', I dont know how to write\n'
+             ', Neither do you...')
+       activities_benraska()
+   elif act_input=='3':
+       print('You go to the mall.  You get new clothes that will keep you nice and warm for the next month!')
+       activities_benraska()
+   elif act_input=='4':
+       print('The pool was very wet.  You jumped in and also got wet.  You finally learned how to backstroke!')
+       activities_benraska()
+   elif act_input=='5':
+       print('Netflix and Chill, all by yourself because you are very lonely in this world!')
+       activities_benraska()
+   elif act_input=='6':
+       print('You throw your controller against the wall becasue Overwatch is terrible!')
+       activities_benraska()
+   elif act_input=='7':
+       print('You go to your job. You acquire currency!')
+       if career_choice=='1':
+           bank += 200
+           activities_benraska()
+   elif act_input=='8':
+       print('You learn how to cook and you can now cook for yourself!')
+       activities_benraska()
+   elif act_input=='9':
+       print('You got to a restaurant and you have a nice dinner!')
+       activities_benraska()
+   else:
+       print('You messed up!')
+       activities_benraska()
+pass
+def activities_olforida():
+   career_choice = input('Jobs for Olforida here. Only 2!')
+   print('So now you got your house and your city set up. Now we get to the fun stuff.  You can do all sorts of '
+         'things such as go to the park, go to the gym, the pool, and even the mall. You must remember though, '
+         'they all cost money!')
+   act_input=input('So what do you want to do?:'
+                   '1. Go to the Gym, $100'
+                   '2. Go to the Park, Free'
+                   '3. Go to the Mall and get clothes, $200'
+                   '4. Go to the Pool, $20'
+                   '5. Stay home and watch Netflix, $20'
+                   '6. Play Video Games on your Xbox, $60'
+                   '7. Go to work?....'
+                   '8. Learn how to cook'
+                   '9. Go to restaurant,$150!'
+                   'Pick from 1 to :')
+   if act_input=='1':
+       print(' You go to the gym and you work out for 4 hours.  You feel yourself getting stronger!')
+       activities_olforida()
+   elif act_input =='2':
+       print(' You go to the park and you are inspired by nature.'
+             'You write a poem that goes:'
+             'Roses are red\n'
+             ', Violets are blue\n'
+             ', I dont know how to write\n'
+             ', Neither do you...')
+       activities_olforida()
+   elif act_input=='3':
+       print('You go to the mall.  You get new clothes that will keep you nice and warm for the next month!')
+       activities_olforida()
+   elif act_input=='4':
+       print('The pool was very wet.  You jumped in and also got wet.  You finally learned how to backstroke!')
+       activities_olforida()
+   elif act_input=='5':
+       print('Netflix and Chill, all by yourself because you are very lonely in this world!')
+       activities_olforida()
+   elif act_input=='6':
+       print('You throw your controller against the wall becasue Overwatch is terrible!')
+       activities_olforida()
+   elif act_input=='7':
+       print('You go to your job. You acquire currency!')
+       if career_choice=='1':
+           bank += 200
+           activities_olforida()
+   elif act_input=='8':
+       print('You learn how to cook and you can now cook for yourself!')
+   elif act_input=='9':
+       print('You got to a restaurant and you have a nice dinner!')
+   else:
+       print('You messed up!')
+       activities_olforida()
+pass
+
+def benraska_live():
+   bank= 10000
+   house_input=input('So in Benraska, you will have 3 options of where to live.  You can live in a high-end'
+                    'apartment thats going to be $4000 per month as rent.  Its going to have a lot of options such '
+                    'as an indoor pool and gym that could be activities later, it also has clothes that you wont '
+                    'have to shop for. The second option is $3000 a month but doesnt have a pool and it is far away'
+                    'from your job.  The third option is $2500 and it doesnt have a gym or pool, but it is very '
+                    'close to your job, which will allow you to work more.  Make your choice. 1,2, or 3? ')
+   #make if statements here for the house and money being removed from the bank
+   if house_input== '1':
+          bank -= 4000
+          print(bank)
+   elif house_input=='2':
+          bank -=3000
+          print(bank)
+   elif house_input=='3':
+          bank -= 2500
+          print(bank)
+   else:
+          house_input=input('YOU MESSED UP! Pick from 1 to 3')
+
+
+def lacifornia_live():
+
+   bank= 5000
+   house_input=input(' There will be 3 houses here.Pick from 4 to 6!')
+   if house_input== '4':
+      bank -= 700
+      print(bank)
+   elif house_input=='5':
+      bank -= 500
+      print(bank)
+   elif house_input=='6':
+      bank -= 400
+      print(bank)
+   else:
+      house_input=input('YOU MESSED UP! Pick from 4 to 6')
+   pass
+
+
+
+
+   #make if statements here for the house and money being removed from the bank
+
+
+def olforida_live():
+  house_input=input('3 houses here. Need price and features.')
+  bank = 5000
+  house_input = input(' There will be 3 houses here.Pick from 4 to 6!')
+  if house_input == '7':
+      bank -= 1500
+      print(bank)
+  elif house_input == '8':
+      bank -= 1250
+      print(bank)
+  elif house_input == '9':
+      bank -= 1000
+      print(bank)
+  else:
+      house_input = input('YOU MESSED UP! Pick from 7 to 9')
+  pass
+
+
+  # make if statements here for the house and money being removed from the bank
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def where_live():
+  live_input=input('I assume Gardos sent you here, well this is pretty simple. You chose where you want to live. \n '
+                   'So let me give you a briefing of each location you will be allowed to live in. Lets start with '
+                   'Benraska, it basically the equivalent of what New York used to be!  High costs for everything, '
+                   'but high paying jobs are pretty common!  Then, theres Lacifornia, this is the equivalent of\n '
+                   'the country.  Here living doesnt cost much, everything is cheap, but good luck finding a job!  '
+                   'Finally, theres Olforida, its moderate, well paying jobs, swell life.  They are all good '
+                   'choices if lived right, but in my opinion, I would go Olforida! So what are you thinking\n '
+                   'Benraska, Lacifornia, or Olforida? Remember, depending where you live, your career choices will '
+                   'vary.' )
+  print('Alright, so %s it is.  Thats a great choice, now go have fun out there!' % live_input)
+  if live_input=='Benraska':
+      print('Ok, so you have $10000 to start of with choose your house!')
+      benraska_live()
+      bank = 10000
+      return
+  elif live_input=='Lacifornia':
+      print('Ok, so you have $5000 to start of with choose your house!')
+      bank=5000
+      lacifornia_live()
+      return
+      # make function to choose house in
+  elif live_input=='Olforida':
+      print('Ok, so you have $7500 to start of with choose your house!')
+      bank=7500
+      olforida_live()
+      return
+      # make function to choose house in
+
+
+
+pass
+def game_start():
+  bank = 0
+  print('Welcome to Mario\'s Adventure World')
+  print('To start the game press a:')
+  raw_input = input()
+  if raw_input == 'a':
+      name_input = input('Welcome to the world of Earth, I am Gardos, what is your name young one?')
+      print('%s, huh, you sound promising...' % name_input)
+      hair_input=input('So tell me, what do you look like? What color is your hair?')
+      eye_input=input(' How about your eyes?')
+      shirt_input=input('What color shirt are you wearing?')
+      pants_input=input('What type of pants?')
+      ready_input=input('So %s, you have %s hair, your eyes are %s, your shirt is %s, and you have %s? Sounds '
+                        'awesome! I think you are ready! Are you ready, now y/n?' % (name_input, hair_input, eye_input, shirt_input, pants_input))
+      if ready_input== 'yes':
+          print('Well, if you say so! Say hi to my brother Sodrag for me!')
+          where_live()
+      else:
+          print('Well too bad, you are!  Have fun out there! Say hi to Sodrag for me!')
+          where_live()
+
+
+  else:
+      print('DUMB DUMB, Run it Again, Press A, this time!')
+
+
+
+
+
+
+
+
+      pass
+
+
+
+
+      pass
+
+def things_to_do():
+  #activities to do such as go to the gym and park and stuff
+
+
+
+
+
+
+  pass
+
+
+game_start()
+
